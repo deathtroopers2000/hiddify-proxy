@@ -4,7 +4,7 @@ export const config = {
 
 export default async function middleware(request) {
   const url = new URL(request.url);
-  const destination = 'https://‪51.178.149.237‬:443'; // ← آدرس سرور Hiddify را اینجا بگذار
+ const destination = 'https://51.178.149.237';
 
   return fetch(destination + url.pathname + url.search, {
     headers: request.headers,
